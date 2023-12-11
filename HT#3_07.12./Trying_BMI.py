@@ -16,3 +16,12 @@ elif choice == "2":
     print(f"Ваш ИМТ составляет: {bmi:.2f}")
 else:
     print("Неверный выбор.")
+
+if bmi < 18.5:
+    print("Underweight / Недостаток веса")
+elif 18.5 <= bmi < 25:
+    print("Normal weight / Нормальный вес")
+elif 25 <= bmi < 30:
+    print("Overweight / Избыточный вес")
+else:
+   print("Obesity / Ожирение")
